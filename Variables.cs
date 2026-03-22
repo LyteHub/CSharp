@@ -39,7 +39,7 @@ namespace OldConsole
                 Console.Write("Invalid - Enter full name: ");
                 fullName = Console.ReadLine();
             }
-            return fullName;
+            return fullName.Trim();
         }
 
         static int GetAge()
@@ -86,7 +86,7 @@ namespace OldConsole
                 Console.Write("Invalid - Enter phone number: ");
                 phoneNumber = Console.ReadLine();
             }
-            return phoneNumber;
+            return phoneNumber.Trim();
         }
     }
 }
