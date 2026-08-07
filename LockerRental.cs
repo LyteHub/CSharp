@@ -99,7 +99,7 @@ public class Program
     private static void FillLocker(string[] locker, int id)
     {
         // Check to see if locker is already occupied
-        if (string.IsNullOrEmpty(locker[id]) == false)
+        if (!string.IsNullOrEmpty(locker[id]))
         {
             Console.WriteLine($"Sorry, but locker {id} has already been rented!");
             return;
@@ -136,7 +136,7 @@ public class Program
     {
         for (int i = 0; i < locker.Length; i++)
         {
-            if (string.IsNullOrEmpty(locker[i]) == false)
+            if (!string.IsNullOrEmpty(locker[i]))
             {
                 Console.WriteLine($"Locker {i + 1}: {locker[i]}");
             }
