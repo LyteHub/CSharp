@@ -93,7 +93,7 @@ public class Program
             int.TryParse(Console.ReadLine(), out id);
         }
 
-        return id;
+        return (id - 1);
     }
 
     private static void FillLocker(string[] locker, int id)
